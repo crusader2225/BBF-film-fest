@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="css/master.css" rel="stylesheet">
+  <title>Brooklyn Outdoor Film Festival</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<!--- header --->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div class="container-fluid" id="header" style="background-color:#f8f9f9;">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1 class="project-title">Brooklyn Film Festival 2019</h1>
+      </div>
+    </div>
+  </div>  
+
+  <!-- beginning of navbar -->
+  <nav class="navbar navbar-inverse white-text" data-spy="affix" data-offset-top="197">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <!--nav mobile screen -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <a class="navbar-brand" href="#"></a>
+
+    <div class="collapse navbar-collapse" id="myNavbar" style="background-color: black">
+      <ul class="nav navbar-nav">
+        <li><a href="#section1"><span class="glyphicon glyphicon-home" style="font-size:18px;"></span></a>
+        </li>
+        <li><a href="#section2">
+        Featured Films</a></li>
+        <li><a href="#section2">
+        Register</a></li>
+        <li><a href="#section3">
+        About the Venue</a></li>
+        <li><a href="#section4">
+        Partner</a></li>
+        <li><a href="#section5">
+        Event News</a></li>
+        <li><a href="#section6">
+        Directions</a></li>
+        <li><a href="#section7">
+        Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--- end of navbar -->
+  <!--- Event Info--->
+  <div class="container-fluid" id="section1">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" id="events">
+        <h2>EVENT INFORMATION</h2>
+        <div class="page-header hidden"></div>
+        <p><label>HOSTED BY </label><p id="font">Brooklyn Vibes Event Co founded by owner Jennifer Viala in September 2007.  Our mission is to share our love of film with guests of all ages. This year we have decided to offer the films free of charge.  The capacity of our film festival this year will be set to 5,000 so be sure to register to reserve your tickets. Preview our film line-up in the Featured Films section.  Enjoy! </p>
+        <label>WHERE</label><p id="font">Brooklyn Bridge Park</p>
+        <p id="font">334 Furman Street, Brooklyn NY 11201</p>
+        <label>WHEN</label><p id="font">August 5th - August 8th, 600pm - 12am daily</p>
+      </div>
+    </div>
+  </div>
+
+  <!---- SECTION 2  -->
+  <!---Featured films card and button-->
+  <div class="container-fluid" id="section2">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card card-film" style="margin-bottom: 10px;">
+          <div class="card-text text-center" style="font-size:18px;">
+            <p>Check out our line-up of award-winning films </p>
+          </div>
+          <a href="#myModal" class="btn btn-1 center-block" data-toggle="modal"  style="padding:10px;margin-top:20px;margin-bottom:20px; font-size:20px;">
+            <b>Featured Films</b>
+          </a>
+          <p class="text-center" style="font-size:18px;">Showtimes will begin at 600pm on August 5th through August 8th at 1200am.  Multiple showtimes are available, make your reservation today. </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Registration card and button --->
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card card-film">
+          <div class="card-text text-center" style="font-size:18px;">
+            <p>To celebrate our <b>10th Anniversary</b> we are welcoming up to 5,000 guests to register for our 2019 Film Festival.  As we would love to extend our <b>FREE</b> films to everyone space is limited.  Register here.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#info" class="btn btn-2 center-block" data-toggle="modal" style="font-size:20px; margin-top: 20px;padding: 10px;"><b>Register Now</b></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Registration Page Modal-->
+  <div class="container">
+    <div  id="info" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5 col-md-push-1" style="color:black; margin-top:80px;margin-left:7px;background-color:lightgray;height:480px;">
+        <h3 class="text-center page-header" style="background-color:rgb(256,256,256,0.7);padding: 5px;">Ticket Registration</h3>
+        <div class="form-group">
+          <label for="name">Ent First and Last Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter First and Last Name">
+        </div>
+        <h5>Film</h5>
+        <form action="/action_page.php">
+          <select name="films" >
+            <option value="bird_box">Bird Box</option>
+            <option value="incredibles_2">Incredibles 2</option>
+            <option value="mission">Mission Impossible: Rogue Nation</option>
+            <option value="green_book">Green Book</option>
+          </select>
+          <br><br>
+        </form>
+        <h5>Dates and Times</h5>
+        <form action="/action_page.php">
+          <select>
+            <optgroup label="August 5th">
+              <option value="500pm">600pm</option>
+              <option value="700pm">900p</option>
+              <option value="1100pm">1100pm</option>
+            </optgroup>
+            <optgroup label="August 6th">
+              <option value="500pm">600pm</option>
+              <option value="700pm">800p</option>
+              <option value="1100pm">1000pm</option>
+            </optgroup>
+            <optgroup label="August 7th">
+              <option value="600pm">600pm</option>
+              <option value="900pm">900pm</option>
+              <option value="1200am">1200am</option>
+            </optgroup>
+            <optgroup label="August 8th">
+              <option value="500pm">600pm</option>
+              <option value="800pm">800pm</option>
+              <option value="1000pm">1000pm</option>
+              <option value="1200am">1200am</option>
+            </optgroup>
+          </select>
+          <br><br>
+        </form>
+        <div class="form-group">
+          <input type="email" class="form-control form" id="email" placeholder="Enter email" aria-describedby="basicaddon2">
+          <button type="button" href="#" class="btn btn-info form" id="btn_reg">
+            Submit
+          </button>
+          <button class="btn btn-default pull-center form" data-dismiss="modal" aria-hidden="true">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Films Modal -->
+  <div id="myModal" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-content modal-height">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3 class="text-center" style="margin-top:60px;" >FEATURED FILMS AND SHOWTIMES</h3>
+
+      <!-- film 5th -->
+      <div class="col-xs-11 col-sm-3 col-md-3 col-lg-3">
+        <div class="card text-center no-border film-card">
+          <h3>AUGUST 5th</h3>
+          <div class="card-img-top"><a href="https://www.imdb.com/title/tt2737304/?ref_=nv_sr_1" target="_blank" title="Click for Link"><img class="img-responsive film-ads center-block" src="img/birdbox.jpg" alt="birdbox"/></a>
+          </div>
+          <ul class="list-group list-group-flush film-list">
+            <li class="list-group-item text-center"><b>Film:</b> Bird Box</li>
+            <li class="list-group-item"><b>Showtimes:</b> 600pm, 900pm, 1100pm</li>
+            <li class="list-group-item film-height"><p>Five years after an ominous unseen presence drives most of society to suicide, a mother and her two children make a desperate bid to reach safety.</p><br/>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- film 6TH  -->
+      <div class="col-xs-11 col-sm-3 col-md-3 col-lg-3">
+        <div class="card text-center film-card no-border" id="sixth">
+          <h3>AUGUST 6TH</h3>
+          <div class="card-img-top">
+            <a href="https://www.imdb.com/title/tt3606756/?ref_=nv_sr_1" target="_blank" title="Click for Link"><img class="img-responsive film-ads" src="img/incredible.jpg" alt="incredibles2"/></a>
+          </div>
+          <ul class="list-group list-group-flush film-list">
+            <li class="list-group-item"><b>Film:</b>Incredibles 2</li>
+            <li class="list-group-item"><b>Showtimes:</b> 600pm, 700pm, 1000pm</li>
+            <li class="list-group-item text-center film-height">
+              <p>The Incredibles hero family takes on a new mission, which involves a change in family roles: Bob Parr (Mr Incredible) must manage the house while his wife Helen (Elastigirl) goes out to save the world.</p>
+            </li>
+          </ul>
+        </div>
+      </div> 
+
+      <!-- film 7th -->
+
+      <div class="col-xs-11 col-sm-3 col-md-3 col-lg-3" style="">
+        <div class="card text-center film-card no-border" id="seventh">
+          <h3>AUGUST 7TH</h3>
+          <div class="card-img-top">
+            <a href="https://www.imdb.com/title/tt4123430/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=ea4e08e1-c8a3-47b5-ac3a-75026647c16e&pf_rd_r=1NN8131XKVK1KZGK986V&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_33" target="_blank" title="Click for Link"><img class="img-responsive film-ads" src="img/fantasticbeasts.jpg" alt="fantastic beast"/></a>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><b>Film:</b> Fantastic Beasts 2</li>
+            <li class="list-group-item"><b>Showtimes:</b> 600pm, 900pm, 1200am</li>
+            <li class="list-group-item film-height"><p>The second installment of the "Fantastic Beasts" series featuring the adventures of Magizoologist Newt Scamander.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- film 8th -->
+      <div class="col-xs-11 col-sm-3 col-md-3 col-lg-3">
+        <div class="card text-center film-card no-border" id="eighth">
+          <h3 class="text-center">AUGUST 8TH</h3>
+          <div class="card-img-top">
+            <a href="https://www.imdb.com/title/tt6966692/?ref_=nv_sr_1" target="_blank" title="Click for Link"><img class="img-responsive film-ads" src="img/greenbook.jpg"/></a>
+          </div>
+          <ul class="list-group list-group-flush film-list">
+            <li class="list-group-item"><b>Film:</b> Greenbook</li>
+            <li class="list-group-item"><b>Showtimes:</b>  5pm, 800pm, 1000pm, 1200a,</li>
+            <li class="list-group-item film-height"><p>A working-class Italian-American bouncer becomes the driver of an African-American classical pianist on a tour of venues through the 1960s American South.</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--close button for modal-->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <button class="btn btn-info center-block feature-close" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--- SECTION 3 -- ABOUT THE VENUE --->
+  <div class="container-fluid" id="section3">
+    <div class="row about_park">
+      <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 col-md-push-1">
+        <div class="card" style="background-color:white;">
+          <div class="card-body" style="font-size: 16px; color:black;">
+            <h3 class="card-title">
+              ABOUT THE VENUE
+            </h3> 
+            <div class="page-header" style="padding-bottom:0px;"></div>
+            <p class="card-text" style="word-wrap: break-word;">Brooklyn Bridge Park spans 85 acres on the Brooklyn side of the East River of New York City.  The park is overseen by a non-profit organization by the name of Brooklyn Bridge Park Corporation.  The organization's mission is to "create and maintain a world class park that is a recreational, environmental and cultural destination enjoyed by residents of, and visitors to, New York City".</p>
+            <p class="pull-left">Click <a href="https://www.brooklynbridgepark.org/pages/brooklyn-waterfront-history" class="here" target="_blank">here</a> to learn more about the history of the Park and the Brooklyn Waterfront.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 hidden-xs col-sm-5 col-md-5 col-lg-5 col-md-push-1">
+        <img class="img-responsive about_park" src="img/film.jpeg"/>  
+      </div>
+    </div>
+  </div>
+
+
+  <!--- Section 4 -->
+  <!--- Partner ---->
+  <div class="container-fluid" id="section4">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="card card-sponsor">
+          <div class="card-body" style="padding:10px;font-size:18px;">
+            <h3 class="page-header">PARTNER</h3>
+            <p class="card-text">Check out <a href="http://brooklyn.news12.com/" class="partners" target="_blank">Brooklyn News 12 </a>for the latest and up to date news.</p></br/>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brooklyn Bridge Park.Org--->
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="card card-sponsor">
+          <div class="card-body" style="padding:0px;font-size:18px;">
+            <h3 class="page-header"><a href="https://brooklynbridgepark.org" class="partners" target="_blank">BROOKLYN PARK.ORG</a></h3>
+            <p class="card-text">Keep Brooklyn Bridge Park beautiful for all to enjoy with family and friends. Consider a donation today.</p><br/>
+            <a href="#" class="donate-now" target="_blank" style="font-size:22px;">Donate Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--section 5 event news-->
+  <div class="container-fluid" id="section5">
+    <div class="row">
+      <h2 class="text-center">Event News</h2>
+      <div class="page-header"></div>
+     
+      <!--paul simon card-->
+      <div class="col-xs-12 co-sm-4 col-md-4 col-lg-4">
+        <div class="card event-text">
+          <div class="card-img-top"><img class="img-responsive center-block"  src="img/paul_simon.jpeg"
+            alt="paul simon" id="event-cards" style="margin-bottom: 20px;"/>
+          </div>
+          <div class="card-text">
+            Paul Simon in concert at Brooklyn Bridge Park to kick-start the festival on August 5th.
+          </div>
+        </div>
+      </div>
+
+      <!--kids day card -->
+      <div class="col-xs-12 co-sm-4 col-md-4 col-lg-4">
+        <div class="card event-text ">
+          <div class="card-img-top"><img class="img-responsive center-block" src="img/kids.jpeg" alt="picture of kids" id="event-cards" style="margin-bottom: 20px;">
+          </div>
+          <div class="card-text">
+            Kids Day on August 6th, register to get your tickets for Incredibles 2.
+          </div>
+        </div>
+      </div>
+
+      <!--sundance card -->
+      <div class="col-xs-12 co-sm-12 col-md-4 col-lg-4">
+        <div class="card event-text">
+          <div class="card-img-top"><img class="img-responsive center-block" src="img/sundance.jpg" alt="sundance film festival" id="event-cards" style="margin-bottom: 20px;">
+          </div>
+          <div class="card-text">
+            Sundance Film Festival will sponsor a booth on August 7th, catch a preview of their upcoming films.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <!-- directions -->
+  <div class="container-fluid" id="section6">
+    <div class="row weather-widget">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card-deck">
+          <div class="card-body">
+            <p><iframe  class="img-responsive" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d12099.754984637424!2d-74.00693157437172!3d40.697346669333356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x89c25a4771eac885%3A0xea881fa2b2ba3e23!2sBrooklyn+Bridge+Park+Greenway%2C+Brooklyn%2C+NY!3m2!1d40.697347!2d-73.9981768!5e0!3m2!1sen!2sus!4v1546666812993" width="600" height="700"  frameborder="0"  allowfullscreen></iframe></p>
+            <ul class="list-group text-center">
+              <li class="list-group-item" style="padding:0px;"><a href="http://www.citymetro.net/?pkw=Your+Trip+Information&title=Brooklyn+Bus+Routes&utm_source=google&utm_medium=cpc&utm_term=brooklyn%20bus%20routes&utm_network=g&utm_pos=1t1&utm_campaign=9CitiesBusRoutes&gclid=EAIaIQobChMIooLc94nT3wIVidlkCh3QyQn1EAAYASAAEgKmpfD_BwE#" target="_blank" class="fa fa-bus" style="font-size: 22px;" title="Bus Link"></a><a href="http://web.mta.info/nyct/maps/busbkln.pdf" target="_blank" class="fa fa-subway" style="font-size:22px;" title="Metro Link"></a><a href="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d12099.754984637424!2d-74.00693157437172!3d40.697346669333356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x89c25a4771eac885%3A0xea881fa2b2ba3e23!2sBrooklyn+Bridge+Park+Greenway%2C+Brooklyn%2C+NY!3m2!1d40.697347!2d-73.9981768!5e0!3m2!1sen!2sus!4v1546666812993" target="_blank" class="fa fa-car" style="font-size:22px;" ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--weather widget-->
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card-deck">
+          <div class="card-body">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/40d68n73d94/brooklyn/?unit=us" data-label_1="BROOKLYN" data-label_2="WEATHER" data-theme="original" >BROOKLYN WEATHER</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container" id="section7">
+    <div class="row">
+      <footer>
+        <!--social media--> 
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+          <ul class="list-group list-unstyled">
+            <h4 style="margin-top:40px;">Follow Us</h4>
+            <li> 
+              <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a>
+              <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
+              <a href="http://google.com" target="_blank" class="fa fa-google bg-info"></a>
+              <a href="https://instagram.com" target="_blank" class="fa fa-instagram"></a>
+              <a href="https://foursquare.com" target="_blank" class="fa fa-foursquare"></a>
+              <a href="https://reddit.com" target="_blank" class="fa fa-reddit"></a>
+            </li>
+          </ul>
+        </div>
+        <!--email-->
+        <div class="col-xs-12 col-sm-2 col-md-3 col-lg-3" id="footer_font">
+          <h4 class="page-header">Email Us</h4>
+          <p><a href="mailto:#">
+          brooklynff@gmail.com</a></p>
+        </div>
+        <!--phone info -->
+        <div class="col-xs-12 col-sm-2 col-md-3 col-lg-3">
+          <h4 class="page-header">Call Us</h4>
+          860-683-7890
+        </div>
+      </footer>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="page-header"></div>
+        <h5 class="text-left"></h5>
+        <b>Copyright Information</b>
+        Material used in this website will not be used for any other purpose than educational.  Logo was designed by theyoungfolks.com  Images taken from brokelyn.com, Wikipedia, PaulSimon.com  Majority of the information is fictional.  
+      </div> 
+    </div>
+  </div>
+
+  <script>
+    $('#feature').css('background-color','red').fadeIn('slow');
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+  </script>
+
+</body>
+</html>    
+
+

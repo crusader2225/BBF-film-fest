@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@import url('https://fonts.googleapis.com/css?family=Oranienbaum');
+
+@import "bootstrap-social.less";
+
+
+@media (max-width: 767px) {
+ 
+
+div.navbar-header {
+    height:20px;
+  }
+
+  .project-title {
+    margin-left:40px;
+    margin-top: 30px;
+  }
+
+  .card-sponsor {
+    height:380px;
+
+  }
+
+  /*event info page header*/
+  .hidden{
+    display:none;
+  }
+
+  .modal-height {
+    height:3180px;
+  }
+
+  a.btn.btn-1, .btn-2{
+    width:75%;
+}}
+
+@media (min-width:1025px) {
+  .modal-height {
+    height:900px;
+  }
+
+   #section3 {
+    height:500px;
+  } 
+
+  img.about_park {
+    margin-top:80px;
+   
+  }
+ 
+
+  #section5 {
+    height:550px;
+  }
+
+  #section6 {
+    height:450px;
+  } 
+
+  .card-sponsor {
+    height: 300px;
+  }
+
+   .project-title {
+   margin-top: 40px;
+   }
+
+  .donate-now {
+   margin-left:340px;
+   font-weight:200;
+   padding:10px;
+  }
+
+  a.btn.btn-1, .btn-2{
+    width:30%;
+ }
+
+ img#event-cards   {
+    max-height: 175px;
+    max-width:400px;
+
+}}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .card-sponsor {
+    height: 50px;
+  }
+
+  .event-text {
+    text-align:center;
+  }
+
+  .card-text {
+    display:inline-block;
+  }
+
+  #section4 {
+    height: 700px;
+  }
+  
+   a.btn.btn-1, .btn-2 {
+    width:30%;
+  }
+
+img#event-cards   {
+    max-height: 225px;
+    max-width:400px;
+
+  }
+
+  img.about_park {
+    margin-top:100px;
+    height:350px;
+  }
+}
+  
+  
+html {
+    -webkit-text-size-adjust:100%;
+  }
+  /*space above nav*/
+  #header {
+    height:140px;
+  }
+
+body {
+    position: relative;
+    font-family:'Lato',sans-serif; 
+  }
+
+  .project-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size:50px;
+    font-weight:400;
+  }
+  .affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+  .affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+  }
+
+  a {
+    color:black;
+  }
+
+ 
+
+  .text-white {
+    color:white;
+  }
+
+  .project-title {
+    margin-left: 30px;
+  }
+
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+h1 {
+  
+  background: -webkit-linear-gradient(green ,orange,black, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#font-style {
+  font-size:20px;
+  color:white;
+  }
+
+.film-height {
+  min-height: 170px;
+  }
+
+.white-text {
+  color:white;
+  background-color: rgb(0,0,0,0.8);
+  }
+
+.card-body {
+  line-height: 35px;
+}
+
+.mobile {
+  position:absolute;
+  left:35px;
+  bottom:10px;
+
+}
+
+a:hover.partners {
+  color:black;
+  background-color: lightblue;
+  padding:10px;
+}
+
+a:active.partners {
+  color:black;
+}
+
+ a:hover.donate-now {
+    color:black;
+    background-color: lightblue;
+}
+
+a:hover.here {
+    color:black;
+    background-color: lightblue;
+    padding:5px;
+}
+
+a.btn-1:hover{
+  background-position: right center; /* change the direction of the change here */
+}
+
+a.btn-2:hover {
+  background-position: right; center;
+}
+
+a.btn.btn-1 {
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+
+a.btn.btn-2 {
+  background-image: linear-gradient(to right, #C39BD3 0%, #5499C7 51%, #C39BD3 100%);
+}
+
+.btn-1 {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+ }
+
+.btn-2 {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+.card {
+  padding: 20px;
+  min-height: 300px;
+  margin-top: 10px;
+
+  border-radius: 3px;
+  margin-bottom: 10px;
+  opacity:1.0;
+  background-color:#f8f9f9;
+}
+
+.partners {
+  font-size: 20px;
+  font-weight:200;
+}
+
+#myModal {
+  width: 100%;
+}
+
+.film-card {
+  position:relative;
+  padding:0px;
+  margin-left:40px;
+  background-color: white;
+}
+
+.form {
+  margin-top:20px;
+}
+
+.no-border {
+  border: none;
+}
+
+.card-film {
+  min-height: 200px;
+  opacity: 0.9;
+}
+
+/*img on park page*/
+.about_park {
+  min-height: 360px;
+}
+
+label {
+  font-size:22px;
+}
+
+/* for google map */
+.img-responsive {
+  width: 100%;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.mobile {
+  position:absolute;
+  right:30px;
+  bottom:10px;
+
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background:#3B5998;
+  color:white;
+  background-size: 20px;
+}
+
+.fa-twitter {
+  background-color:lightblue;
+  color:white;
+  background-size: 20px;
+}
+
+.fa-google {
+  background-color:blue;
+  color:black;
+  background-size: 20px;
+}
+
+.fa-instagram {
+  background-color:red;
+  color:white;
+  background-size: 20px;
+}
+
+.fa-foursquare{
+  background-color:yellow;
+  color:black;
+  background-size: 20px;
+}
+
+.fa-reddit {
+  background-color:magenta;
+  color:white;
+  background-size: 20px;
+}
+
+h2 {
+  font-weight: 200;
+}
+
+#section1 {
+  height:500px;
+}
+
+#section7 {
+  font-family:'Lato',sans-serif;
+  height:280px;
+  margin-top:70px;
+}
